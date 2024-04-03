@@ -1,0 +1,281 @@
+.n-wrapper{
+    width: 100%;
+    max-height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+
+.n-left{
+    max-width: 100%;
+    margin-left: 6vw;
+    /* margin-right: 16%; */
+    align-items: center;
+    display: flex;
+}
+
+.n-right{
+    margin-right: 5vw;
+    max-width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.n-name{
+    font-size: 40px;
+    font-family: Brush Script MT;
+    background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 300%;
+    background-position: left;
+    cursor: pointer;
+    animation: text-animation 3s infinite alternate;
+}
+
+@keyframes text-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+.n-right-main-ul {
+    display: flex;
+    gap: 5vw;
+    margin-right: 6vw;
+    list-style: none;
+}
+
+.edulist-black>a, .explist-black>a, .projlist-black>a, .worklist-black>a, .otherlist-black>a {
+    text-decoration: none;
+    color: black;
+    font-size: clamp(8px, 14px, 20px);
+    font-weight: 600;
+    /* display: block; */
+}
+
+.edulist-white>a, .explist-white>a, .projlist-white>a, .worklist-white>a, .otherlist-white>a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(8px, 14px, 20px);
+    font-weight: 600;
+    /* display: block; */
+}
+
+.edulist-black>a:hover, .edulist-white>a:hover, .explist-black>a:hover, .explist-white>a:hover, .projlist-black>a:hover, .projlist-white>a:hover, .worklist-black>a:hover, .worklist-white>a:hover, .otherlist-black>a:hover, .otherlist-white>a:hover {
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+.edulist-black:hover>a>i, .edulist-white:hover>a>i, .explist-black:hover>a>i, .explist-white:hover>a>i, .projlist-black:hover>a>i, .projlist-white:hover>a>i, .worklist-black:hover>a>i, .worklist-white:hover>a>i, .otherlist-black:hover>a>i, .otherlist-white:hover>a>i {
+    transform: rotate(90deg);
+}
+
+.edulist-black>a>i, .edulist-white>a>i, .explist-black>a>i, .explist-white>a>i, .projlist-black>a>i, .projlist-white>a>i, .worklist-black>a>i, .worklist-white>a>i, .otherlist-black>a>i, .otherlist-white>a>i{
+    transition: transform 0.5s;
+    margin-left: 5px;
+}
+
+.sub-menu1-ul, .sub-menu2-ul, .sub-menu3-ul, .sub-menu4-ul, .sub-menu5-ul {
+    padding-left: 0;
+    padding-top: 10px;
+    list-style: none;
+    position: absolute;
+    display: none;
+}
+
+.edulist-black:hover .sub-menu1-ul, .edulist-white:hover .sub-menu1-ul, .explist-black:hover .sub-menu2-ul, .explist-white:hover .sub-menu2-ul, .projlist-black:hover .sub-menu3-ul, .projlist-white:hover .sub-menu3-ul, .worklist-black:hover .sub-menu4-ul, .worklist-white:hover .sub-menu4-ul, .otherlist-black:hover .sub-menu5-ul, .otherlist-white:hover .sub-menu5-ul {
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+.sub-menu1-ul>li, .sub-menu2-ul>li, .sub-menu3-ul>li, .sub-menu4-ul>li, .sub-menu5-ul>li {
+    padding-top: 10px;
+}
+
+.edulist-black>ul>li>a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(8px, 14px, 20px);
+    left: -7px;
+}
+
+.edulist-white>ul>li>a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(8px, 14px, 20px);
+    left: -7px;
+}
+
+.explist-black>ul>li>a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(8px, 14px, 20px);
+    left: -27px;
+}
+
+.explist-white>ul>li>a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(8px, 14px, 20px);
+    left: -27px;
+}
+
+.projlist-black>ul>li>a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(8px, 14px, 20px);
+    left: -30px;
+}
+
+.projlist-white>ul>li>a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(8px, 14px, 20px);
+    left: -30px;
+}
+
+.worklist-black>ul>li>a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(8px, 14px, 20px);
+    left: -21px;
+}
+
+.worklist-white>ul>li>a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(8px, 14px, 20px);
+    left: -21px;
+}
+
+.otherlist-black>ul>li>a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(8px, 14px, 20px);
+    left: 7px;
+}
+
+.otherlist-white>ul>li>a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(8px, 14px, 20px);
+    left: 7px;
+}
+
+.edulist-black>ul>li>a:hover, .edulist-white>ul>li>a:hover, .explist-black>ul>li>a:hover, .explist-white>ul>li>a:hover, .projlist-black>ul>li>a:hover, .projlist-white>ul>li>a:hover, .worklist-black>ul>li>a:hover, .worklist-white>ul>li>a:hover, .otherlist-black>ul>li>a:hover, .otherlist-white>ul>li>a:hover {
+    color: rgb(255, 94, 0);
+}
+
+.button{
+    border-radius: 30px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: clamp(8px, 12px, 20px);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+    background: linear-gradient(rgb(255, 196, 0), rgb(255, 174, 0));
+    box-shadow: 0px 0px 5px 0px rgba(223, 107, 12, 0.74);
+}
+
+.button:hover{
+    cursor: pointer;
+    background: rgb(233, 124, 22);
+    color: white;
+}
+
+
+
+
+
+/* For screens smaller than 768px (standard tablets) */
+@media only screen and (max-width: 768px) {
+    .n-left {
+      margin-left: 3%;
+      margin-right: 8%;
+    }
+    
+    .n-right {
+      margin-right: 3%;
+    }
+  
+    .n-name {
+      font-size: 28px;
+    }
+  
+    .n-right-main-ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      margin: 0;
+    }
+  
+    .button {
+      padding: 8px 20px;
+      font-size: 12px;
+    }
+  
+    .sub-menu1-ul, .sub-menu2-ul, .sub-menu3-ul, .sub-menu4-ul, .sub-menu5-ul {
+      position: static;
+      display: none;
+      padding-top: 0;
+    }
+  
+    .edulist-black:hover .sub-menu1-ul, .edulist-white:hover .sub-menu1-ul,
+    .explist-black:hover .sub-menu2-ul, .explist-white:hover .sub-menu2-ul,
+    .projlist-black:hover .sub-menu3-ul, .projlist-white:hover .sub-menu3-ul,
+    .worklist-black:hover .sub-menu4-ul, .worklist-white:hover .sub-menu4-ul,
+    .otherlist-black:hover .sub-menu5-ul, .otherlist-white:hover .sub-menu5-ul {
+      display: none;
+    }
+  }
+  
+  /* For screens smaller than 576px (standard smartphones) */
+  @media only screen and (max-width: 576px) {
+    .n-left {
+      margin-left: 2%;
+      margin-right: 5%;
+    }
+  
+    .n-right {
+      margin-right: 2%;
+    }
+  
+    .n-name {
+      font-size: 24px;
+    }
+  
+    .button {
+      padding: 6px 16px;
+      font-size: 10px;
+    }
+  }
+  
